@@ -187,3 +187,12 @@ $(document).on('click', '#title', function() {
     inputbox.on('blur', save).focus();
 
 });
+
+$(document).on('click', '#download', function() {
+    var content = localStorage.getItem('editorKey') ? localStorage.getItem('editorKey') : intro;
+    var title = localStorage.getItem('titleKey') ? localStorage.getItem('titleKey') : intro;
+
+    uriContent = "data:application/octet-stream," + encodeURIComponent(content);
+    newWindow = window.open(uriContent, title + '.html');
+
+});

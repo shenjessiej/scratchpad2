@@ -44,7 +44,7 @@
 
 #titleinput {
     position: absolute;
-    width: 100%;
+    width: 90%;
     padding: 8px 5px 7px 10px;
     background: #1c1c1c;
     color: #aaa;
@@ -54,4 +54,17 @@
     font-size: 12px;
     font-family: Monaco, Menlo, 'Ubuntu Mono', Consolas, source-code-pro, monospace;
     border: none;
+}
+
+#download {
+    position: absolute;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    top: 0;
+    background-image: url('../assets/download.png');
+    color: white;
+    cursor: pointer;
+    z-index: 1;
 }
